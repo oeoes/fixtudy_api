@@ -87,9 +87,9 @@
     		echo json_encode($result);
     	}
 
-        public function rightJoinTable($tableOne, $primaryKey, $tableTwo, $foreignKey)
+        public function rightJoinTable($tableOne, $foreignKey, $tableTwo, $primaryKey)
         {
-            $query = "SELECT $tableOne.*, $tableTwo.* FROM $tableOne RIGHT JOIN $tableTwo ON $tableOne.$primaryKey = $tableTwo.$foreignKey";
+            $query = "SELECT $tableOne.*, $tableTwo.* FROM $tableOne RIGHT JOIN $tableTwo ON $tableTwo.$primaryKey = $tableOne.$foreignKey";
 
             $data = $this->connect()->query($query);
 
