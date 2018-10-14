@@ -2,12 +2,13 @@
 
 ### Recommended:
 
-''''php
+'''php
+
 date() format : (Y-m-d) misal 2018-08-18
 time() format : (H : m :s) misal 09:45:57
-''''
+'''
 
-1. Authentication
+## Authentication
 
 * POST: http://localhost/fixtudy_api/auth/register.php {_$email_user, $password_user_}->name(Register);
 
@@ -16,7 +17,7 @@ time() format : (H : m :s) misal 09:45:57
 * GET: http://localhost/fixtudy_api/auth/logout.php ->name(Logout);
 
 
-2. Profile
+## Profile
 
 * GET: http://localhost/fixtudy_api/profile/view-profile.php ->name(Menampilkan biodata);
 
@@ -25,9 +26,9 @@ time() format : (H : m :s) misal 09:45:57
 * POST: http://localhost/fixtudy_api/profile/update-profile-store.php {_$birthdate, $gender, $department, $study_year, $bio, $experience, $phone, $photo_url_} ->name(perbarui biodata);
 
 
-3. Activity
+## Activity
 
-### post
+##### post
 
 * POST: http://localhost/fixtudy_api/activity/create-post.php {_$post_} ->name(Membuat post);
 
@@ -35,14 +36,14 @@ time() format : (H : m :s) misal 09:45:57
 
 * GET: http://localhost/fixtudy_api/activity/view-post.php ->name(view post and comment relations);
 
-### comment
+##### comment
 
 * GET: http://localhost/fixtudy_api/activity/create-comment.php {_$getPostId_} ->name(getting certain post to comment);
 
 * POST: http://localhost/fixtudy_api/activity/comment-publish.php {_$id_post, $comment_} ->name(publish comment);
 
 
-4. Study Class
+## Study Class
 
 * POST: http://localhost/fixtudy_api/study_class/create-class.php {_$class_name, $class_loc, $class_date, $class_time, $class_desc, $class_payment_} ->name(Membuat class);
 
@@ -52,7 +53,7 @@ time() format : (H : m :s) misal 09:45:57
 
 * GET: http://localhost/fixtudy_api/study_class/delete-myclass.php {_$getIdClass_} ->name(hapus class "buatan sendiri");
 
-5. Attendies
+## Attendies
 
 * GET: http://localhost/fixtudy_api/study_class/attendies/join-class.php {_$getIdClass_} ->name(bergabung ke kelas);
 
