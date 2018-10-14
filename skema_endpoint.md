@@ -1,11 +1,10 @@
-[[ Endpoint Scheme ]]
+#Endpoint Scheme
 
-{{
-	Recommended:
+##Recommended:
+	'''php
 	date() format : (Y-m-d) misal 2018-08-18
 	time() format : (H:m:s) misal 09:45:57
-
-}}
+	'''
 
 - Authentication
 
